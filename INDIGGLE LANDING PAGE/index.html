@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Iñdie Studios</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <div>
@@ -18,12 +20,20 @@
       <input type="text" name="lastname" placeholder="Your Last Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Your Phone Number" required />
-      <textarea name="message" placeholder="Your Roster" rows="5"></textarea>
+      <textarea name="Roster" placeholder="Your Roster" rows="5"></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
 
   <div class="success" id="successMessage"></div>
+
+  <!-- ✅ Custom Popup -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <p>We've got something for you, check your email!</p>
+      <button id="closePopupBtn">OK</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
